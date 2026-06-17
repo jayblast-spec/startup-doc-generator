@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FounderDocs AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="mark">FD</div>
+          <div>
+            <p>FounderDocs AI</p>
+            <span>Startup document studio</span>
+          </div>
+        </div>
+
+        <nav id="docList" class="doc-list" aria-label="Document types"></nav>
+
+        <section class="trust">
+          <p>Template-first workflow</p>
+          <span>AI-style guidance fills structured templates and flags review items. It does not replace a lawyer.</span>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Free founder document generator</p>
+            <h1>Generate a review-ready startup document.</h1>
+          </div>
+          <div class="actions">
+            <button id="resetBtn" class="icon-btn" title="Reset form" aria-label="Reset form">Reset</button>
+            <button id="printBtn" class="primary">Download PDF</button>
+          </div>
+        </header>
+
+        <section class="notice">
+          <strong>Legal disclaimer</strong>
+          <span>This tool provides templates and information only. It is not legal advice. Review every document with qualified counsel before signing.</span>
+        </section>
+
+        <div class="grid">
+          <form id="docForm" class="panel form-panel">
+            <div class="panel-head">
+              <span>Intake</span>
+              <strong id="docTitle">Founder Agreement</strong>
+            </div>
+
+            <div class="fields">
+              <label>
+                Company name
+                <input name="company" placeholder="Acme Labs, Inc." />
+              </label>
+              <label>
+                Formation state / country
+                <input name="jurisdiction" placeholder="Delaware, United States" />
+              </label>
+              <label>
+                Effective date
+                <input name="date" type="date" />
+              </label>
+              <label>
+                Founder / party 1
+                <input name="partyOne" placeholder="Joy Ogunleye" />
+              </label>
+              <label>
+                Founder / party 2
+                <input name="partyTwo" placeholder="Co-founder name" />
+              </label>
+              <label>
+                Roles and responsibilities
+                <textarea name="roles" placeholder="CEO handles product, fundraising, and partnerships. CTO handles engineering and infrastructure."></textarea>
+              </label>
+              <label>
+                Equity / consideration
+                <textarea name="equity" placeholder="60% / 40%, subject to four-year vesting with a one-year cliff."></textarea>
+              </label>
+              <label>
+                Special terms
+                <textarea name="terms" placeholder="Founder departures, confidentiality, dispute handling, advisor equity, or IP carve-outs."></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="primary wide">Generate draft</button>
+          </form>
+
+          <section class="panel review-panel">
+            <div class="panel-head">
+              <span>Review</span>
+              <strong id="qualityLabel">Waiting for intake</strong>
+            </div>
+
+            <div class="score-row">
+              <div>
+                <small>Readiness</small>
+                <strong id="score">0%</strong>
+              </div>
+              <div class="meter"><span id="meterFill"></span></div>
+            </div>
+
+            <div id="warnings" class="warnings">
+              <p>Add company, parties, jurisdiction, date, and deal terms to generate a reliable draft.</p>
+            </div>
+
+            <label class="editor-label" for="draft">Editable document</label>
+            <textarea id="draft" class="draft" spellcheck="true"></textarea>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <template id="printTemplate">
+      <section class="print-doc">
+        <p class="print-disclaimer">Template and informational material only. Not legal advice. Review with qualified counsel before use.</p>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
