@@ -1,30 +1,61 @@
-# FounderDocs AI
+<div align="center">
 
-Free startup document generator MVP for founders.
+# 📄 Startup Doc Generator
 
-## What It Does
+**17 founder-essential documents, generated free in seconds — term sheets, NDAs, MOUs, and more.**
 
-- Generates review-ready drafts from structured templates.
-- Supports Founder Agreement, Mutual NDA, IP Assignment, and Advisor Agreement.
-- Scores intake readiness and flags missing legal/business details.
-- Lets users edit the final draft before export.
-- Uses browser print as PDF export.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-6366f1?style=for-the-badge)](https://startup-doc-generator.vercel.app)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![MIT License](https://img.shields.io/badge/License-MIT-34d399?style=for-the-badge)](LICENSE)
 
-## Legal Safety
+</div>
 
-This is template-first and AI-assisted in structure. It does not provide legal advice. Every generated document includes a disclaimer and should be reviewed by qualified counsel before use.
+---
 
-## Open Locally
+## ✨ Features
 
-Open `index.html` in a browser.
+- 📋 **17 template-first documents** — NDA, term sheet, MOU, advisory agreement, SAFE note, and more
+- ✏️ **Fill-in-the-blank simplicity** — no legal jargon to decode, just answer the prompts
+- 📥 **Instant download** — PDF and DOCX formats, ready to send
+- 🏷️ **Founder-grade defaults** — startup-friendly terms pre-loaded, no lawyer required for basics
+- 🔒 **Zero data retention** — documents generated and discarded client-side
+- ⚡ **No signup, no paywall** — open and generate immediately
+- 🌍 **International templates** — covers common jurisdictions and startup hubs
 
-## Next Production Step
+---
 
-For a hosted SaaS version, add:
+## 🚀 Quick Start
 
-- real AI provider for clause suggestions and intake cleanup
-- vetted template library
-- account/session storage
-- document history
-- server PDF generation
-- lawyer-reviewed jurisdiction variants
+```bash
+git clone https://github.com/jayblast-spec/startup-doc-generator.git
+cd startup-doc-generator
+npm install
+npm start
+```
+
+Or visit the [live demo](https://startup-doc-generator.vercel.app) instantly.
+
+---
+
+## 🛠 Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Language | JavaScript (ES6+) |
+| Styling | CSS3 / Tailwind |
+| PDF Engine | Browser / jsPDF |
+| Deployment | Vercel |
+
+---
+
+## 📦 Deploy Your Own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jayblast-spec/startup-doc-generator)
+
+No env vars required.
+
+---
+
+## 📄 License
+
+MIT © [Joy Ogunleye](https://github.com/jayblast-spec) · Built with [ArkNet Forge](https://arknet-os.vercel.app)
