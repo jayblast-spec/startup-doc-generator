@@ -576,3 +576,9 @@ textarea {
     padding: 0;
   }
 }
+/* FounderDocs identity: archival navy + mint verification. */
+:root { --fd-navy: #071525; --fd-blue: #2563eb; --fd-mint: #34d399; }
+body { background-image: radial-gradient(circle at 12% 4%, rgba(37,99,235,.17), transparent 32%), radial-gradient(circle at 90% 18%, rgba(52,211,153,.1), transparent 30%); background-attachment: fixed; }
+.panel, .notice, .status-strip, .topbar { transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+.panel:hover { border-color: rgba(52,211,153,.35); box-shadow: 0 24px 60px rgba(7,21,37,.13); }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--fd-mint); outline-offset: 3px; }
