@@ -38,6 +38,16 @@ Startup Doc Generator (shipped under the product name "FounderDocs AI") is a tem
 - The "Download PDF" button calls `window.print()` against a print-formatted view of the filled template — no PDF library, no server-side rendering
 - Entirely client-side: no database, no auth, no API routes
 
+## Engineering Notes
+
+**The real problem:** founder legal documents are sensitive (equity splits, IP assignment, compensation) — routing them through a server just to fill in a template adds a real data-handling liability for zero benefit.
+
+**The approach:** no LLM, no backend, on purpose. The `catalog` array holds the actual clause text for all 17 document types; filling in `{{company}}`, `{{equity}}`, `{{roles}}` and printing to PDF all happen in the browser, so a founder's cap table numbers and confidential terms never leave their machine.
+
+**One real number:** 17 document types, each with 5-6 real clauses (not placeholder lorem ipsum) — the founder agreement alone covers ownership, roles, decision-making, vesting, and confidentiality as separately editable sections.
+
+**Not handled yet:** the clause language is a reasonable starting draft, not lawyer-reviewed legal advice — it's meant to save the first draft of a document you'd still want counsel to check before signing.
+
 ## Live
 
 https://startup-doc-generator.vercel.app
