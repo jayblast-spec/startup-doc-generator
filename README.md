@@ -7,7 +7,6 @@
 Startup Doc Generator (shipped under the product name "FounderDocs AI") is a template-first document studio covering 17 startup document types — founder agreement, incorporation packet, co-founder exit clause, shareholders agreement, cap table, ESOP agreement, NDA, IP assignment, trademark documents, employee contracts, offer letters, HR policies, terms of service, privacy policy, legal compliance docs, and a financial model. A guided form fills each template's clauses from user input, flags missing fields for review, and renders the result to a print-ready PDF via the browser's native print dialog. It carries an explicit disclaimer: template guidance only, not legal advice.
 
 <p>
-  <a href="https://startup-doc-generator.vercel.app"><img alt="Live Demo" src="https://img.shields.io/badge/Live-Demo-1D4ED8?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://github.com/jayblast-spec/startup-doc-generator"><img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
@@ -50,7 +49,7 @@ Startup Doc Generator (shipped under the product name "FounderDocs AI") is a tem
 
 ## Live
 
-https://startup-doc-generator.vercel.app
+*(demo temporarily offline)*
 
 ## Tech Stack
 
